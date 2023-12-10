@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Text: #c6c6c6 (rgb(198, 198, 198) - hsl(0, 0%, 78%))
+    Background: #0c0b15 (rgb(12, 11, 21) - hsl(246, 31%, 6%))
+    Primary: #3560ee (rgb(53, 96, 238) - hsl(226, 84%, 57%))
+    Secondary: #0d1034 (rgb(13, 16, 52) - hsl(235, 60%, 13%))
+    Accent: #05ff93 (rgb(5, 255, 147) - hsl(154, 100%, 51%))
+
+Realtime Colors link for selected colors: https://www.realtimecolors.com/blog-post?colors=c6c6c6-0c0b15-3560ee-0d1034-05ff93&fonts=Zilla%20Slab-Noto%20Sans
+
+Thanks for using RealtimeColors.com!

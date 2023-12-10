@@ -1,0 +1,18 @@
+{% import "elements.html" as elements %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ config.title }}</title>
+    <link rel="stylesheet" href="/gs.css"/>
+  </head>
+
+  <body>
+    {{ elements::header() }}
+    <main>
+      {% block content %} {% endblock %}
+    </main>
+    {{ elements::footer() }}
+  </body>
+</html>

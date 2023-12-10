@@ -1,0 +1,30 @@
+# The URL the site will be built for
+title = "goodsoul.de"
+base_url = "https://goodsoul.de"
+description = "Hey, I'm Eric and this is my place for all the random things I'm dealing with."
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+menu = [
+    # { path = ".", name = "home" },
+    { path = "/blog", name = "posts" },
+    { path = "/tags", name = "tags" },
+    { path = "/about", name = "about" },
+]
+
+taxonomies = [
+    {name = "tags", rss = true},
+]
+
+num_recent = 3

@@ -1,0 +1,297 @@
+:root {
+    --clr-text: #c6c6c6;
+    --clr-bg: #0c0b15;
+    --clr-primary: #3560ee;
+    --clr-secondary: #191b35;
+    --clr-accent: #05ff93;
+
+    --main-height: 250px;
+    --main-width: 800px;
+    --footer-height: 42px;
+
+    --font-big: 46px;
+    --font-normal: 20px;
+    --font-small: 18px;
+    --font: 'Noto Sans', sans-serif;
+    --font2: 'zillaslab', 'Times New Roman', Times, serif;
+
+    --m: 20px;
+    --m2: calc(var(--m) / 2);
+    --gap: calc(var(--m) / 4);
+    --nb-height: 64px;
+}
+
+body {
+    font-size: 100%;
+    /* font-size: var(--font-normal); */
+    font-weight: 400;
+    font-family: var(--font);
+
+    /* display: flex; */
+    margin: 0;
+
+    color: var(--clr-text);
+    background-color: var(--clr-bg);
+}
+
+main {
+    margin: 5rem 0;
+    max-width: 42em;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - var(--footer-height));
+}
+
+::selection {
+    background: var(--clr-accent);
+    color: var(--clr-secondary);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Zilla Slab';
+    font-weight: 700;
+}
+
+h1 {font-size: 3.366rem; /* 53.92px */}
+h2 {font-size: 2.525rem; /* 40.32px */}
+h3 {font-size: 1.894rem; /* 30.24px */}
+h4 {font-size: 1.421rem; /* 22.72px */}
+h5 {font-size: 1.066rem; /* 17.12px */}
+small {font-size: 0.600rem; /* 9.6px */}
+
+.container {
+    top: var(--nb-height);
+    position: relative;
+    padding-bottom: calc(var(--main-height) / 2);
+    min-height: 80vh;
+    background: var(--clr-bg);
+}
+
+.main_head {
+    width: 100%;
+    padding-top: var(--m);
+    color: var(--clr-bg);
+    background: var(--clr-main);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    height: var(--main-height);
+}
+
+a {
+	color: var(--clr-text);
+	font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: var(--gap);
+    color: var(--clr-accent);
+}
+a[href*='https://']:after {
+    content: url('../img/x.svg');
+    margin-left: var(--gap);
+}
+a[href*='mailto:']:after {
+    content: url('../img/mail.svg');
+    margin-left: var(--gap);
+}
+a[href*='tel:']:after {
+    content: url('../img/phone.svg');
+    margin-left: var(--gap);
+}
+
+.flextainer {
+    max-width: var(--main-width);
+    min-width: var(--main-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_content,
+.main_box {
+    padding: var(--m);
+}
+.main_box {
+    padding-top: var(--m);
+}
+
+.main_title,
+.main_names {
+	left: var(--logo-size);
+    position: relative;
+    font-size: var(--font-big);
+    margin: 0px;
+}
+
+.main_title {font-weight: normal;}
+
+.main_content {
+    color: var(--clr-text);
+    padding: var(--m);
+}
+
+.nb {
+    display: flex;
+    width: 100%;
+    /* min-height: var(--nb-height); */
+    background: var(--clr-secondary);
+    opacity: 0.2;
+    position:fixed;
+    z-index: 42;
+    transition:all 0.3s ease;
+    top: 0;
+}
+.nb:hover {
+    opacity: 0.8;
+    border-bottom: 2px solid var(--clr-accent);
+    box-shadow: 0 3px 10px #00000099;
+}
+.nb_container {
+    display:flex !important;
+    flex-basis:auto;
+    flex-direction: row;
+}
+.nb_title {
+    margin: var(--gap);
+}
+.nb_list {
+    flex-direction:row;
+    display: flex;
+    list-style: none;
+    align-self: flex-end;
+}
+.nb_list_x {
+    display: flex !important;
+}
+.nb_item {
+    color: var(--clr-text);
+    font-family: var(--font2);
+    padding-right:.5rem;
+    padding-left:.5rem
+}
+.nb_btn {
+    padding:.25rem .75rem;
+    color: var(--clr-text);
+    font-size: var(--font-normal);
+    font-family: var(--font);
+    line-height:1;
+    background-color:transparent;
+    border-radius:8px;
+    display: none;
+    cursor: pointer;
+    border: 2px solid var(--clr-bg);
+    align-self: flex-end;
+    outline: none;
+}
+.nb_btn_icon {
+    display:inline-block;
+    width:1.0em;
+    height:1.0em;
+    vertical-align:bottom;
+    background:no-repeat center center;
+    background-size:100% 100%;
+    background-image: url('../img/menu.svg');
+    margin-right: 0.15em;
+}
+.nb_btn_icon_x {
+    background-image: url('../img/menux.svg');
+}
+
+.team_item {
+    width: calc(var(--main-width) / 2.1);
+    padding-bottom: calc(var(--m));
+}
+.team_img {
+    height: var(--team-img-sz);
+    width: var(--team-img-sz);
+    float: left;
+    padding-top: var(--gap);
+    padding-right: var(--gap);
+}
+.list_desc {
+    font-weight: normal;
+    font-size: var(--font-small);
+    text-decoration: none;
+    margin-right: calc(var(--m) / 2);
+}
+.team_list {
+    display: flex;
+    flex-flow: wrap;
+}
+.team_container {
+    padding: var(--m);
+}
+
+.list_row {
+    padding-bottom: var(--gap);
+}
+
+footer {
+    margin-top: var(--m);
+    padding: 1px;
+    background: var(--clr-main);
+    text-align: center;
+    transition:all 0.3s ease;
+
+    position: relative;
+    bottom: 0;
+}
+footer > ul {
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+}
+
+@font-face {
+    font-family: zillaslab;
+    font-display: swap;
+    src: url('ZillaSlab-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: zillaslab;
+    font-display: swap;
+    src: url('ZillaSlab-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 800px) {
+    * {
+        --font-big: 8vw;
+        --font-normal: 5vw;
+        --font-small: 4vw;
+        --m: 5vw;
+        --nb-height: 15vw;
+    }
+    main {
+        max-width: 80%;
+    }
+    .main_head {
+        height: 70vw;
+    }
+    .nb_btn {
+        display: inherit;
+    }
+    .nb_list {
+        flex-direction:column;
+        display: none;
+    }
+    footer > ul {
+        flex-direction:column;
+    }
+    .flextainer {
+        min-width: 0;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .nb_container {
+        flex-direction: column;
+        margin-right: var(--m);
+        margin-top: 3.5vw;
+    }
+    .team_item {
+        width: auto;
+    }
+}

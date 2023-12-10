@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://goodsoul.de/</loc>
+    </url>
+    <url>
+        <loc>https://goodsoul.de/about/</loc>
+        <lastmod>2023-11-12</lastmod>
+    </url>
+    <url>
+        <loc>https://goodsoul.de/blog/</loc>
+    </url>
+    <url>
+        <loc>https://goodsoul.de/blog/first/</loc>
+        <lastmod>2023-10-30</lastmod>
+    </url>
+    <url>
+        <loc>https://goodsoul.de/stuff/</loc>
+        <lastmod>2023-11-02</lastmod>
+    </url>
+</urlset>
