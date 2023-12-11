@@ -12,7 +12,7 @@
     --font-big: 46px;
     --font-normal: 20px;
     --font-small: 18px;
-    --font: 'Noto Sans', sans-serif;
+    --font: 'notosans', sans-serif;
     --font2: 'zillaslab', 'Times New Roman', Times, serif;
 
     --m: 20px;
@@ -24,7 +24,7 @@
 body {
     font-size: 100%;
     /* font-size: var(--font-normal); */
-    font-weight: 400;
+    font-weight: 100;
     font-family: var(--font);
 
     /* display: flex; */
@@ -52,8 +52,8 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-h1 {font-size: 3.366rem; /* 53.92px */}
-h2 {font-size: 2.525rem; /* 40.32px */}
+h1 {font-size: 2.366rem; /* 53.92px */}
+h2 {font-size: 2.125rem; /* 40.32px */}
 h3 {font-size: 1.894rem; /* 30.24px */}
 h4 {font-size: 1.421rem; /* 22.72px */}
 h5 {font-size: 1.066rem; /* 17.12px */}
@@ -77,6 +77,7 @@ small {font-size: 0.600rem; /* 9.6px */}
 }
 
 a {
+    font-family: 'Zilla Slab';
 	color: var(--clr-text);
 	font-weight: bold;
     text-decoration: none;
@@ -226,14 +227,17 @@ a[href*='tel:']:after {
 }
 
 footer {
-    margin-top: var(--m);
-    padding: 1px;
-    background: var(--clr-main);
-    text-align: center;
-    transition:all 0.3s ease;
-
     position: relative;
     bottom: 0;
+    max-width: 42em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: calc(var(--clr-bg) * 0.5);
+    transition:all 0.3s ease;
+    opacity: 0.4;
+}
+footer:hover {
+    opacity: 1.0;
 }
 footer > ul {
     justify-content: space-evenly;
@@ -254,6 +258,13 @@ footer > ul {
     font-display: swap;
     src: url('ZillaSlab-Bold.woff2') format('woff2');
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: notosans;
+    font-display: swap;
+    src: url('noto_sans.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -277,9 +288,6 @@ footer > ul {
     .nb_list {
         flex-direction:column;
         display: none;
-    }
-    footer > ul {
-        flex-direction:column;
     }
     .flextainer {
         min-width: 0;

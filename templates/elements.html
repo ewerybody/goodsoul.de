@@ -45,8 +45,11 @@
 {% macro footer() %}
 <footer>
     <ul>
-        <li>© {{ now() | date(format="%Y-%m-%d") }}</li>
+        <li><a href="https://goodsoul.de">goodsoul.de</a></li>
+        <li>⚝</li>
         <li>built with <a href="https://getzola.org">Zola</a></li>
+        <li>⚝</li>
+        <li>{{ now() | date(format="%Y-%m-%d") }}</li>
     </ul>
 </footer>
 {% endmacro footer %}
