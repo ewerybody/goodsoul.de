@@ -1,7 +1,7 @@
 +++
+title = "about **goodsoul.de**" 
 date = 2023-11-12
 +++
-# about **goodsoul.de**
 Hello, my name is Eric and this is my website/blog for personal ramblings, collections of random stuff I come across and aaaaaall the projects I want to do and maybe even am doing already.
 
 ### Who am I?
