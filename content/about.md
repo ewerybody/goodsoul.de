@@ -1,5 +1,4 @@
 +++
-title = "about **goodsoul.de**" 
 date = 2023-11-12
 title = "about <b>goodsoul.de</b>"
 +++
