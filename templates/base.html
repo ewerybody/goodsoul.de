@@ -4,8 +4,9 @@
 
   <head>
     <meta charset="utf-8">
-    <title>{{ config.title }}</title>
+    <title>{{ config.title | striptags }}</title>
     <link rel="stylesheet" href="/gs.css"/>
+    <script src="/nav.js"></script>
   </head>
 
   <body>

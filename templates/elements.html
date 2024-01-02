@@ -1,54 +1,25 @@
 
 {% macro header() %}
 <nav class="nb">
-  <!-- <div class="nb_container flextainer" id="nb_container"> -->
-    <a href="/">
-        <h1 class="nb_title">{{config.title}}</h1>
-    </a>
-      <!-- <div class="nb_spacer">{{config.title}}</div> -->
-    <button class="nb_btn">
-      <span class="nb_btn_icon"></span>
-    </button>
-    <ul class="nb_list">
-      {% for item in config.extra.menu %}
-      <!-- <li><a class="nb_item" href="{{ item.path | safe | replace(from="$BASE_URL", to=config.base_url) }}">{{item.name}}</a></li> -->
-      <li><a class="nb_item" href="{{item.path}}">{{item.name}}</a></li>
-      {% endfor %}
-    </ul>
-  <!-- </div> -->
-</nav>
-
-<!-- <div class="header">
-    <h1 class="site-title"><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
-    <p class="site-tagline">{{ config.description }}</p>
-    <div class="nav">
-        <a class="nav-btn" href="#">
-            <span class="ci ci-burger"></span>
-        </a>
-        <ul class="nav-list">
-            {% if config.extra.slim_menu %}
-            {% for item in config.extra.slim_menu %}
-            <li><a href="{{ item.url | safe | replace(from="$BASE_URL", to=config.base_url) }}">{{ item.name }}</a></li>
+    <div class="nb_container">
+        <a href="/"><h1 class="nb_title">{{config.title}}</h1></a>
+        <ul class="nb_list">
+            {% for item in config.extra.menu %}
+            <li><a class="nb_item" href=".{{item.path}}">{{item.name}}</a></li>
             {% endfor %}
-            {% endif %}
-            <li class="spacer">&ac;</li>
-            {% if config.extra.slim_social %}
-            {% for item in config.extra.slim_social %}
-            <li><a href="{{ item.url | safe }}">{{ item.name }}</a></li>
-            {% endfor %}
-            {% endif %}
         </ul>
+        <button class="nb_btn"><span class="nb_btn_icon"></span></button>
     </div>
-</div> -->
+</nav>
 {% endmacro header %}
 
 {% macro footer() %}
 <footer>
     <ul>
         <li><a href="https://goodsoul.de">goodsoul.de</a></li>
-        <li>⚝</li>
+        <li>✱</li>
         <li>built with <a href="https://getzola.org">Zola</a></li>
-        <li>⚝</li>
+        <li>✱</li>
         <li>{{ now() | date(format="%Y-%m-%d") }}</li>
     </ul>
 </footer>
