@@ -5,8 +5,8 @@
   <head>
     <meta charset="utf-8">
     <title>{{ config.title | striptags }}</title>
-    <link rel="stylesheet" href="/gs.css"/>
-    <script src="/nav.js"></script>
+    <link rel="stylesheet" href="{{ elements::rel_url(path="gs.css") }}"/>
+    <script src="{{ elements::rel_url(path="nav.js") }}"></script>
   </head>
 
   <body>

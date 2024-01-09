@@ -24,3 +24,15 @@
     </ul>
 </footer>
 {% endmacro footer %}
+
+{%- macro rel_url(path, trailing_slash=false, cachebust=false) -%}
+    {%- set url = get_url(path=path, trailing_slash=trailing_slash, cachebust=cachebust) | replace(from=config.base_url, to="") -%}
+    {%- if current_path != "/" -%}
+        {%- set url = current_path ~ url | replace(from=current_path, to="..") -%}
+    {%- endif -%}
+    {%- if url is starting_with("/") -%}
+        {{- url | trim_start_matches(pat="/") -}}
+    {%- else -%}
+        {{- url -}}
+    {%- endif -%}
+{% endmacro rel_url %}
