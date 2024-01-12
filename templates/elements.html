@@ -1,11 +1,11 @@
-
+{%- import "macros.html" as macros -%}
 {% macro header() %}
 <nav class="nb">
     <div class="nb_container">
-        <a href="/"><h1 class="nb_title">{{config.title}}</h1></a>
+        <a href="{{ macros::rel_url(path="") }}"><h1 class="nb_title">{{config.title}}</h1></a>
         <ul class="nb_list">
             {% for item in config.extra.menu %}
-            <li><a class="nb_item" href=".{{item.path}}">{{item.name}}</a></li>
+            <li><a class="nb_item" href="{{ macros::rel_url(path=item.path) }}">{{item.name}}</a></li>
             {% endfor %}
         </ul>
         <button class="nb_btn"><span class="nb_btn_icon"></span></button>
@@ -16,7 +16,7 @@
 {% macro footer() %}
 <footer>
     <ul>
-        <li><a href="https://goodsoul.de">goodsoul.de</a></li>
+        <li><a href="{{ macros::rel_url(path="") }}">goodsoul.de</a></li>
         <li>✱</li>
         <li>built with <a href="https://getzola.org">Zola</a></li>
         <li>✱</li>
@@ -25,14 +25,3 @@
 </footer>
 {% endmacro footer %}
 
-{%- macro rel_url(path, trailing_slash=false, cachebust=false) -%}
-    {%- set url = get_url(path=path, trailing_slash=trailing_slash, cachebust=cachebust) | replace(from=config.base_url, to="") -%}
-    {%- if current_path != "/" -%}
-        {%- set url = current_path ~ url | replace(from=current_path, to="..") -%}
-    {%- endif -%}
-    {%- if url is starting_with("/") -%}
-        {{- url | trim_start_matches(pat="/") -}}
-    {%- else -%}
-        {{- url -}}
-    {%- endif -%}
-{% endmacro rel_url %}

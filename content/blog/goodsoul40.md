@@ -14,6 +14,7 @@ Yes, this is already the 4th installment of this website.
 - [ ] main page with last few articles
 - [ ] article list with dates
 - [ ] tags
+- [ ] all links work relatively
 - [ ] code style
     - [x] snippet
     - [ ] block syntax highlighting

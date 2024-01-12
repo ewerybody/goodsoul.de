@@ -1,0 +1,15 @@
+{%- macro rel_url(path, trailing_slash=false, cachebust=false) -%}
+    {# remove base url from result #}
+    {%- set url = get_url(path=path, trailing_slash=trailing_slash, cachebust=cachebust) | replace(from=config.base_url, to="") -%}
+    {%- if current_path != "/" -%}
+        {# if were not in root put as many ../ as we're up in the path #}
+        {%- set parts = current_path | split(pat="/") -%}
+        {%- for i in parts | slice(end=-2) -%}../{%- endfor -%}
+    {%- endif -%}
+    {# trim starting slash #}
+    {%- if url is starting_with("/") -%}
+        {{- url | trim_start_matches(pat="/") -}}
+    {%- else -%}
+        {{- url -}}
+    {%- endif -%}
+{% endmacro rel_url %}
