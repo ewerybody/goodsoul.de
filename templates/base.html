@@ -5,6 +5,10 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta http-equiv=content-security-policy
+        content="default-src 'none'; base-uri 'self'; img-src 'self'; form-action 'self'; script-src 'self'; style-src 'self'; font-src 'self'">
+    <meta name=referrer content="no-referrer">
     <title>{{ config.title | striptags }}</title>
     <link rel="stylesheet" href="{{ macros::rel_url(path="gs.css") }}"/>
     <script src="{{ macros::rel_url(path="nav.js") }}"></script>
