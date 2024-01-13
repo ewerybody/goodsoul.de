@@ -37,3 +37,4 @@ Yes, this is already the 4th installment of this website.
 - [x] external links with icons
 - [x] what to put in the footer
     - [x] build with Zola - date ?
+- [ ] have it upload to FTP via uppy
