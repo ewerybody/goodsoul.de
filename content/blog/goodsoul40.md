@@ -12,8 +12,10 @@ Yes, this is already the 4th installment of this website.
 
 ### Blog TODO:
 - [ ] main page with last few articles
-- [ ] article list with dates
+- [ ] article list with dates on home page and all posts list
 - [ ] tags
+- [x] mobile not properly working well, on mobile!
+- [ ] bold slab font broken on mobile safari?
 - [x] all links work relatively
 - [ ] code style
     - [x] snippet
