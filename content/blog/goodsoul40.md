@@ -14,8 +14,8 @@ Yes, this is already the 4th installment of this website.
 - [ ] main page with last few articles
 - [ ] article list with dates on home page and all posts list
 - [ ] tags
-- [x] mobile not properly working well, on mobile!
-- [ ] bold slab font broken on mobile safari?
+- [x] mobile not properly working well, on mobile! (according <meta> was missing)
+- [x] bold slab font broken on mobile safari? (not used font variable name thoroughly)
 - [x] all links work relatively
 - [ ] code style
     - [x] snippet

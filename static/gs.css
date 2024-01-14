@@ -56,7 +56,7 @@ main {
 ::selection { background: var(--clr-accent); color: var(--clr-secondary); }
 
 a {
-    font-family: 'Zilla Slab';
+    font-family: var(--font2);
 	color: var(--clr-text);
 	font-weight: bold;
     text-decoration: none;
