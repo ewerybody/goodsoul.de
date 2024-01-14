@@ -28,10 +28,10 @@
 
 h1, h2, h3, h4, h5 { font-family: var(--font2); font-weight: 700; }
 h1 {font-size: var(--font-big)}
-h2 {font-size: calc(var(--font-big) * 0.9)}
-h3 {font-size: calc(var(--font-big) * 0.8)}
-h4 {font-size: calc(var(--font-big) * 0.7)}
-h5 {font-size: calc(var(--font-big) * 0.6)}
+h2 {font-size: calc(var(--font-big) * 0.85)}
+h3 {font-size: calc(var(--font-big) * 0.7)}
+h4 {font-size: calc(var(--font-big) * 0.5)}
+h5 {font-size: calc(var(--font-big) * 0.4)}
 small {font-size: var(--font-small)}
 b { font-weight: 700; }
 
