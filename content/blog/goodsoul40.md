@@ -2,12 +2,21 @@
 date = 2023-12-29
 title = "goodsoul blog 4.0"
 +++
-Yes, this is already the 4th installment of this website.
+Yes, this is already the 4th installment of this website. And it's been 23 years since it all started! 😮
+Emojis were not a thing already and like them almost any fancy looks had to be hacked together with gifs. Darn, even transparency was a problem and dedicated hacks for certain browsers (well, Internet Explorer mostly) were pretty common.
+
+After all this time I am not even a web-geek! I know .. ehmm, better I can teach myself what I need to know for the problem in front of me in the moment and forget about it asap. So this here is my little experience with it :]
+
+### a little timeline
 
 1. `2001-2006` • hand crafted HTML frame jungle as a 'DJ friends calendar page' with "blog" notes.\
 2. `2007-2008` • [Movable Type](https://movabletype.org) php blog thing.
 3. `2008-2023` • [Wordpress](https://wordpress.org) with tailored design (which broke somewhen, ).
 4. `2024-...` • Staticly generated from md-files with [Zola](https://getzola.org).
+
+### Why now Zola?
+
+🤷 I don't know. First off, there was no way it would have been anything else than **static**. I have some experience with [Hugo](https://gohugo.io) now. It's alright. I kinda hate the documentation. ...
 
 
 ### Blog TODO:
