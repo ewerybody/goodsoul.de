@@ -47,3 +47,18 @@ After all this time I am not even a web-geek! I know .. ehmm, better I can teach
 - [x] what to put in the footer
     - [x] build with Zola - date ?
 - [ ] have it upload to FTP via uppy
+
+
+### some resources used
+
+* [colors and font picking - realtimecolors.com](https://www.realtimecolors.com/blog-post?colors=c7c7c7-0c0b14-3560ed-0d0f35-05ff93&fonts=Zilla%20Slab-Noto%20Sans)
+* [Aligning items in a flex container - developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container) [and](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_alignment)
+*
+
+### old site links
+
+Don't know if I really want to publish? Maybe screenshots?
+* [1.0](https://goodsoul.de/_private/_old_site/main.html)
+* [2.0](https://goodsoul.de/goodsoul/archives.html)
+* [3.0](https://goodsoul.de) current
+* [4.0](https://goodsoul.de/4) need to switch
