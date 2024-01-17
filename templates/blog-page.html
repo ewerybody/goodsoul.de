@@ -1,9 +1,14 @@
+{%- import "macros.html" as macros -%}
 {% extends "base.html" %}
 
 {% block content %}
 <div class="content_head">
     <span>{{ page.title | safe }}</span>
     <div class="content_date">{{ page.date }}</div>
+    {%- for tag in page.taxonomies.tags %}
+    <a class="post-tag" href="../../tags/{{ tag }}">#{{ tag }}</a>
+    {% endfor -%}
+    {{ macros::github_link(path=page.path) }}
 </div>
 <div class="content_body">
     {{ page.content | safe }}

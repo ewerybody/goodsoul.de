@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for page in term.pages %}
+<li class="post">
+    <a href="../..{{ page.path }}">{{ page.title }}</a>
+    <span class="meta">{{ page.date | date(format="%Y-%m-%d") }}</span>
+</li>
+{% endfor %}
+{% endblock content %}

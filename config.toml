@@ -9,6 +9,9 @@ compile_sass = false
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+taxonomies = [
+    {name = "tags", rss = true},
+]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -23,8 +26,5 @@ menu = [
     { path = "/about", name = "about" },
 ]
 
-taxonomies = [
-    {name = "tags", rss = true},
-]
-
 num_recent = 3
+github = "https://github.com/ewerybody/goodsoul.de/blob/main/content"

@@ -1,7 +1,10 @@
 +++
 date = 2023-12-29
 title = "goodsoul blog 4.0"
+[taxonomies]
+tags = ["blog", "bla"]
 +++
+
 Yes, this is already the 4th installment of this website. And it's been 23 years since it all started! 😮
 Emojis were not a thing already and like them almost any fancy looks had to be hacked together with gifs. Darn, even transparency was a problem and dedicated hacks for certain browsers (well, Internet Explorer mostly) were pretty common.
 
@@ -22,7 +25,7 @@ After all this time I am not even a web-geek! I know .. ehmm, better I can teach
 ### Blog TODO:
 - [ ] main page with last few articles
 - [ ] article list with dates on home page and all posts list
-- [ ] tags
+- [x] tags
 - [x] mobile not properly working well, on mobile! (according <meta> was missing)
 - [x] bold slab font broken on mobile safari? (not used font variable name thoroughly)
 - [x] all links work relatively
@@ -33,8 +36,8 @@ After all this time I am not even a web-geek! I know .. ehmm, better I can teach
     - [x] title on top
     - [x] background box
     - [x] meta on top right
-    - [ ] link to github repo
-    - [ ] title md stylable?
+    - [x] link to github repo
+    - [x] title ~~md~~ html-stylable
 - [ ] have `page.title` in head-title (not only `config.title`)
 - [ ] cookies
   - [ ] floater
