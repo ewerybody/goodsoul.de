@@ -13,3 +13,9 @@
         {{- url -}}
     {%- endif -%}
 {% endmacro rel_url %}
+
+
+{%- macro github_link(path) -%}
+{%- set path = path | trim_end_matches(pat="/") -%}
+<a class="post-github" href="{{ config.extra.github }}{{ path }}.md">github</a>
+{% endmacro github_link %}

@@ -1,4 +1,3 @@
-{%- import "elements.html" as elements -%}
 {%- import "macros.html" as macros -%}
 <!DOCTYPE html>
 <html lang="en">
@@ -15,10 +14,10 @@
   </head>
 
   <body>
-    {{ elements::header() }}
+    {%- include "header.html" -%}
     <main>
       {% block content %} {% endblock %}
     </main>
-    {{ elements::footer() }}
+    {%- include "footer.html" -%}
   </body>
 </html>

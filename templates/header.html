@@ -1,5 +1,3 @@
-{%- import "macros.html" as macros -%}
-{% macro header() %}
 <nav class="nb">
     <div class="nb_container">
         <a href="{{ macros::rel_url(path="") }}"><h1 class="nb_title">{{config.title}}</h1></a>
@@ -11,17 +9,3 @@
         <button class="nb_btn"><span class="nb_btn_icon"></span></button>
     </div>
 </nav>
-{% endmacro header %}
-
-{% macro footer() %}
-<footer>
-    <ul>
-        <li><a href="{{ macros::rel_url(path="") }}">goodsoul.de</a></li>
-        <li>✱</li>
-        <li>built with <a href="https://getzola.org">Zola</a></li>
-        <li>✱</li>
-        <li>{{ now() | date(format="%Y-%m-%d") }}</li>
-    </ul>
-</footer>
-{% endmacro footer %}
-
