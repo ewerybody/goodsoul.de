@@ -10,8 +10,9 @@
             {% for term in terms %}
             {# {{ macros::post_list_item(page=page) }} #}
             <li>
-                <a href="tags/{{ term.name | safe }}">
-                    {{ term.name }} ({{ term.pages | length }} post{{ term.pages | length | pluralize }})
+                <a class="post-tag" href="tags/{{ term.name | safe }}">
+                    #{{ term.name }}
+                    <span>{{ term.pages | length }} post{{ term.pages | length | pluralize }}</span>
                 </a>
             </li>
             {% endfor %}

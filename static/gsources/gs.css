@@ -13,7 +13,7 @@
     --font-big: 46px;
     --font-med: calc(var(--font-big) * 0.7);
     --font-normal: 20px;
-    --font-small: 18px;
+    --font-small: 13px;
     --font: 'notosans', sans-serif;
     --font2: 'zillaslab', 'Times New Roman', Times, serif;
     --title-outline: 2.5px;
@@ -246,6 +246,12 @@ code {
 .post-tag:hover {
     background-color: var(--clr-accent);
     color: black;
+    text-decoration: none;
+}
+.post-tag > span:last-of-type {
+    font-size: var(--font-small);
+    font-family: var(--font);
+    font-weight: 100;
 }
 .post-github {
     content: "" !important;
