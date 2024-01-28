@@ -1,6 +1,6 @@
 +++
 date = 2023-10-30
-title = "My first post with zola"
+title = "My <b>first</b> post with zola"
 [taxonomies]
 tags = ["bla"]
 +++

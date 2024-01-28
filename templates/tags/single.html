@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="content_head">
+    <span>all posts tagged #<b>{{term.name}}</b></span>
+</div>
 {% for page in term.pages %}
-<li class="post">
-    <a href="../..{{ page.path }}">{{ page.title }}</a>
-    <span class="meta">{{ page.date | date(format="%Y-%m-%d") }}</span>
-</li>
+{{ macros::post_list_item(page=page) }}
 {% endfor %}
 {% endblock content %}

@@ -1,16 +1,20 @@
 {% extends "base.html" %}
+{%- import "macros.html" as macros -%}
 
 {% block content %}
-<p class="subtitle">{{config.description}} <a href="./about">more ...</a></p>
+<div class="content_body">
+    <p>{{config.description}} <a href="./about">more ...</a></p>
+</div>
 <p>Recent posts:</p>
 
 {% set section = get_section(path="blog/_index.md") %}
 {% for page in section.pages %}
     {% if loop.index > config.extra.num_recent %}{% break %}{% endif %}
-    <li>
+    {# <li>
       <a href=".{{ page.path | safe }}">{{ page.title }}</a>
       <p class="date">{{ page.date }}</p>
-    </li>
+    </li> #}
+    {{ macros::post_list_item(page=page) }}
 {% endfor %}
 
 <p><a href="./blog">all posts ...</a></p>

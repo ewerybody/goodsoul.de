@@ -10,21 +10,21 @@ Emojis were not a thing already and like them almost any fancy looks had to be h
 
 After all this time I am not even a web-geek! I know .. ehmm, better I can teach myself what I need to know for the problem in front of me in the moment and forget about it asap. So this here is my little experience with it :]
 
-### a little timeline
+### a **little** timeline
 
 1. `2001-2006` • hand crafted HTML frame jungle as a 'DJ friends calendar page' with "blog" notes.\
 2. `2007-2008` • [Movable Type](https://movabletype.org) php blog thing.
 3. `2008-2023` • [Wordpress](https://wordpress.org) with tailored design (which broke somewhen, ).
 4. `2024-...` • Staticly generated from md-files with [Zola](https://getzola.org).
 
-### Why now Zola?
+### Why **now** Zola?
 
 🤷 I don't know. First off, there was no way it would have been anything else than **static**. I have some experience with [Hugo](https://gohugo.io) now. It's alright. I kinda hate the documentation. ...
 
 
 ### Blog TODO:
-- [ ] main page with last few articles
-- [ ] article list with dates on home page and all posts list
+- [x] main page with last few articles
+- [x] article list with dates on home page and all posts list
 - [x] tags
 - [x] mobile not properly working well, on mobile! (according <meta> was missing)
 - [x] bold slab font broken on mobile safari? (not used font variable name thoroughly)
