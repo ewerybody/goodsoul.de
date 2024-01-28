@@ -12,10 +12,38 @@
     {%- else -%}
         {{- url -}}
     {%- endif -%}
-{% endmacro rel_url %}
+{%- endmacro rel_url -%}
 
 
 {%- macro github_link(path) -%}
 {%- set path = path | trim_end_matches(pat="/") -%}
 <a class="post-github" href="{{ config.extra.github }}{{ path }}.md">github</a>
-{% endmacro github_link %}
+{%- endmacro github_link -%}
+
+
+{%- macro post_list_item(page) -%}
+{# <a href="{{page.path}}"> #}
+<div class="post_list_item">
+    <span>{{ page.title | safe }}</span>
+    <div class="content_date">{{ page.date }}</div>
+    {%- for tag in page.taxonomies.tags %}
+    <a class="post-tag" href="../../tags/{{ tag }}">#{{ tag }}</a>
+    {% endfor -%}
+    <a href="{{ macros::rel_url(path=page.path) }}"> </a>
+</div>
+{# </a> #}
+{%- endmacro post_list_item -%}
+
+
+{%- macro content_head(page, github_link=false) -%}
+<div class="content_head">
+    <span>{{ page.title | safe }}</span>
+    <div class="content_date">{{ page.date }}</div>
+    {%- for tag in page.taxonomies.tags %}
+    <a class="post-tag" href="../../tags/{{ tag }}">#{{ tag }}</a>
+    {% endfor -%}
+    {%- if github_link -%}
+    {{ macros::github_link(path=page.path) }}
+    {% endif -%}
+</div>
+{%- endmacro content_head -%}
