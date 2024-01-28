@@ -25,6 +25,8 @@
     --m2: calc(var(--m) / 2);
     --gap: calc(var(--m) / 4);
     --nb-height: 64px;
+
+    --post-item-border: 2px;
 }
 
 h1, h2, h3, h4, h5 { font-family: var(--font2); font-weight: 500; }
@@ -200,22 +202,21 @@ code {
     position: relative;
     cursor:pointer;
     background-color: transparent;
-    border-color: var(--clr-secondary);
-    border-width: 2px;
+    border: var(--post-item-border) solid var(--clr-secondary);
     border-radius: var(--m2);
-    border-style: solid;
-    padding: var(--m2);
     margin-bottom: var(--m2);
     transition: 0.2s;
-    padding-top: var(--m);
+    padding: var(--m2);
+    /* padding-top: var(--m); */
+    padding-bottom: var(--m2);
     display: flex;
 }
 .post_list_item:hover {
     background-color: var(--clr-secondary);
     color: var(--clr-accent);
-    border-bottom-color: var(--clr-accent);
-    border-bottom-width: var(--m2);
-    padding-top: var(--m2);
+    border-bottom: var(--gap) solid var(--clr-accent);
+    /* padding-top: var(--m2); */
+    padding-bottom: calc(var(--gap) + var(--post-item-border));
 }
 .post_list_item > span:first-child {
     font-family: var(--font2);
@@ -234,6 +235,21 @@ code {
 }
 .post-tag {
     z-index: 42;
+    background-color: var(--clr-text);
+    color: var(--clr-bg);
+    font-family: var(--font2);
+    border-radius: var(--gap);
+    padding: 0 var(--gap) 0 var(--gap);
+    margin-left: var(--gap);
+    height: calc(var(--font-normal) + var(--gap));
+}
+.post-tag:hover {
+    background-color: var(--clr-accent);
+    color: black;
+}
+.post-github {
+    content: "" !important;
+    margin-left: var(--gap);
 }
 
 
