@@ -131,7 +131,7 @@ code {
 }
 .nb_title {
     margin: 0;
-    z-index: 42;
+    z-index: 43;
     color: var(--title-color);
     text-shadow:
         var(--title-outline) var(--title-outline) var(--title-radius) var(--title-color2),
@@ -307,7 +307,7 @@ footer > ul {
         --font-normal: 4vw;
         --font-small: 3vw;
     }
-    main { padding: 0; }
+    main { padding: 0; padding-top: var(--m);}
     .nb { opacity: 0.8; }
     .nb_btn { display: inherit; }
     .nb_list { flex-direction:column; display: none; }
