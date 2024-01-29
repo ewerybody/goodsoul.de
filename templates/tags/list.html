@@ -1,22 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
-    {# <h1 class="page-title">{{ config.extra.translations[lang][0].all_tags }}</h1> #}
-    <div class="content_head">
-        <span><b>all</b> tags</span>
-    </div>
+{# <h1 class="page-title">{{ config.extra.translations[lang][0].all_tags }}</h1> #}
+<div class="content_head">
+    <span><b>all</b> tags</span>
+</div>
 
-    <div class="tag-cloud">
-        <ul class="tags">
-            {% for term in terms %}
-            {# {{ macros::post_list_item(page=page) }} #}
-            <li>
-                <a class="post-tag" href="tags/{{ term.name | safe }}">
-                    #{{ term.name }}
-                    <span>{{ term.pages | length }} post{{ term.pages | length | pluralize }}</span>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-
+<div class="tag-cloud">
+  <ul class="tags">
+    {% for term in terms %}
+    <li>
+      <a class="post-tag" href="{{ term.name | safe }}">
+          #{{ term.name }}
+          <span>{{ term.pages | length }} post{{ term.pages | length | pluralize }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endblock content %}

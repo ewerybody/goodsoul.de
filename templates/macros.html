@@ -27,7 +27,8 @@
     <span>{{ page.title | safe }}</span>
     <div class="content_date">{{ page.date }}</div>
     {%- for tag in page.taxonomies.tags %}
-    <a class="post-tag" href="../../tags/{{ tag }}">#{{ tag }}</a>
+      {%- set tagpath = "tags/" ~ tag -%}
+      <a class="post-tag" href="{{ macros::rel_url(path=tagpath) }}">#{{ tag }}</a>
     {% endfor -%}
     <a href="{{ macros::rel_url(path=page.path) }}"> </a>
 </div>
