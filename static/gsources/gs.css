@@ -111,7 +111,7 @@ code {
     background: var(--clr-secondary);
     opacity: 0.2;
     position:fixed;
-    z-index: 23;
+    z-index: 1337;
     transition:all 0.3s ease;
     top: 0;
 }
@@ -131,7 +131,7 @@ code {
 }
 .nb_title {
     margin: 0;
-    z-index: 43;
+    z-index: 1338;
     color: var(--title-color);
     text-shadow:
         var(--title-outline) var(--title-outline) var(--title-radius) var(--title-color2),
@@ -149,6 +149,7 @@ code {
     align-self: center;
     margin: 0;
     margin-left: auto;
+    z-index: 1337;
 }
 .nb_item {
     padding-right:.5rem;
