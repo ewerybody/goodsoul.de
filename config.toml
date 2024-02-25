@@ -1,7 +1,7 @@
 # The URL the site will be built for
 title = "goodsoul.de"
 base_url = "https://goodsoul.de"
-description = "Hey, I'm Eric and this is my place for all the random things I'm dealing with."
+description = "Hey everyone! I'm Eric, I code tools for game developers, I draw, like cycling, breakbeats, stickers, do cooking, lettering, swing dancing, screen printing, writing ... lengthy lists and this is my web place for all these things and maybe even"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
