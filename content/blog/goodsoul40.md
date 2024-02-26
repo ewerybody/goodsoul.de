@@ -61,7 +61,7 @@ After all this time I am not even a web-geek! I know .. ehmm, better I can teach
 ### old site links
 
 Don't know if I really want to publish? Maybe screenshots?
-* [1.0](https://goodsoul.de/_private/_old_site/main.html)
-* [2.0](https://goodsoul.de/goodsoul/archives.html)
-* [3.0](https://goodsoul.de) current
-* [4.0](https://goodsoul.de/4) need to switch
+* [1.0](https://goodsoul.de/_private/_old_site/main.html) HTML 1.0
+* [2.0](https://goodsoul.de/goodsoul/archives.html) movable type archive
+* [3.0](https://goodsoul.de/wp) last wordpress
+* [4.0](https://goodsoul.de) current
