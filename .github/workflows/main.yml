@@ -1,0 +1,21 @@
+name: CI
+run-name: build and ftp upload
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: deploy
+    steps:
+      - name: Checkout the current branch
+        uses: actions/checkout@v3
+
+      - name: Install Zola
+        run: sudo snap install zola --edge
+
+      - name: Build the website
+        run: zola build
+
+      - name: Find and Upload changes
+        run: python GSVKSBKJBDU.py goodsoul.de ${{secret.VKNJSR}} ${{secret.VSKBPSWF}} public .
