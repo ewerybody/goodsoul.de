@@ -1,5 +1,5 @@
 +++
-date = 2024-2-26
+date = 2024-02-26
 title = "uptpy - Compact Python FTP Uploader"
 [taxonomies]
 tags = ["code", "blog"]
