@@ -38,4 +38,4 @@ The tool turned out with this kind of UI since I gathered XP with PySide profess
 
 Videos. I'd actually like to make shorts explaining aspects of a2. Might be something like the format of [Fireship on YouTube](https://www.youtube.com/@Fireship). There should be some compact straight-to-the-point videos about:
 
-*
+* hhggjj
