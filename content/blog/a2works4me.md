@@ -36,6 +36,27 @@ The tool turned out with this kind of UI since I gathered XP with PySide profess
 
 # How to What is ...
 
-Videos. I'd actually like to make shorts explaining aspects of a2. Might be something like the format of [Fireship on YouTube](https://www.youtube.com/@Fireship). There should be some compact straight-to-the-point videos about:
+Videos. I'd actually like to make shorts explaining aspects of a2. Might be something like the format of [Fireship on YouTube](https://www.youtube.com/@Fireship). There should really be some compact straight-to-the-point videos about:
 
-* hhggjj
+* what is a2 (Ahk runtime, some examples, config with ui, make own modules)
+* how to get a2 (download from GitHub, install, ignore windows warning, how to update)
+* big video with all a2.modules and time stamps to jump into
+* short about each of the a2.modules
+* how to make mods
+* how to develop a2 (fork, get python, get Pyside6, setup vs code)
+
+# latest Ahk 2
+
+Not unlike the Python world Ahk is split into legacy and latest. Ahk 2 has been on the horizon for ages and I was always too lazy to go for it and give it a try. Meanwhile it was made the default and I actually managed to do some tests and ported some library stuff. But that's a tiny step yet and there is quite some chunk of work ahead! The big question is still if it would work at all the way we build the Ahk script files and start/restart the runtime but, well it's the future™ and it would be rather embarrassing to not attempt the move.
+
+# un-coupling elements
+
+The module building blocks need another overhaul.
+
+Currently the developer Ui and code always loads when we just use them the default way. The hotkey element already has its own directory under a2elenents. Let's do it that way for any element and have user and dev .py files underneath. 
+
+For once I still believe in separation of code and data. Most Ui is data anyway and if it can be handled with a dedicated tool, let's do it! But currently some default settings values of some of the module building blocks are only just set by the Ui. That's dirty and must come from a dedicated defaults JSON for each and every element.
+
+# conclusion
+
+So yeah. There you have it. That's another 5 years of work? ;D I don't know. I'm still not even sure about the order. Maybe we do Ahk 2 first?
