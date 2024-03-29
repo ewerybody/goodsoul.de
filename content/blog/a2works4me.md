@@ -4,7 +4,7 @@ title = "a2 - works for me"
 [taxonomies]
 tags = ["code", "projects"]
 +++
-Almost **12 years ago** (!!!) I made [the initial commit on GitHub for a2](https://github.com/ewerybody/a2/commit/71031e49299a2e1189a30405380581b02c28c5c9). The thing was always planned as "never finished, always in development" but sure you gotta get somewhere somewhen, right? So what's the holdup?
+Almost **12 years ago** (!!!)* I made [the initial commit on GitHub for a2](https://github.com/ewerybody/a2/commit/71031e49299a2e1189a30405380581b02c28c5c9). The thing was always planned as "never finished, always in development" but sure you gotta get somewhere somewhen, right? So what's the holdup?
 
 Well, I guess the biggest "problem" is that is just `works for me`™️.
 
@@ -43,7 +43,7 @@ Videos. I'd actually like to make shorts explaining aspects of a2. Might be some
 * big video with all a2.modules and time stamps to jump into
 * short about each of the a2.modules
 * how to make mods
-* how to develop a2 (fork, get python, get Pyside6, setup vs code)
+* how to develop a2 (fork, get python, get PySide6, setup vs code)
 
 # latest Ahk 2
 
@@ -53,10 +53,12 @@ Not unlike the Python world Ahk is split into legacy and latest. Ahk 2 has been 
 
 The module building blocks need another overhaul.
 
-Currently the developer Ui and code always loads when we just use them the default way. The hotkey element already has its own directory under a2elenents. Let's do it that way for any element and have user and dev .py files underneath. 
+Currently the developer Ui and code always loads when we just use them the default way. The hotkey element already has its own directory under a2elements. Let's do it that way for any element and have user and dev .py files underneath.
 
 For once I still believe in separation of code and data. Most Ui is data anyway and if it can be handled with a dedicated tool, let's do it! But currently some default settings values of some of the module building blocks are only just set by the Ui. That's dirty and must come from a dedicated defaults JSON for each and every element.
 
 # conclusion
 
 So yeah. There you have it. That's another 5 years of work? ;D I don't know. I'm still not even sure about the order. Maybe we do Ahk 2 first?
+
+\* seems like there's a pattern of [reminiscing about ancient stuff in my past life here](@/blog/goodsoul40.md).
