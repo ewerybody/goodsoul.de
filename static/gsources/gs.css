@@ -60,7 +60,7 @@ main > p {margin: var(--m2);}
 ::selection { background: var(--clr-accent); color: var(--clr-secondary); }
 strong {
     font-weight: 900;
-    letter-spacing: -0.06rem;
+    letter-spacing: -0.04rem;
 }
 
 a {
