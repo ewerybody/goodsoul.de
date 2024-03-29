@@ -19,8 +19,11 @@ After all this time I am not even a web-geek! I know .. ehmm, better I can teach
 
 ### Why **now** Zola?
 
-🤷 I don't know. First off, there was no way it would have been anything else than **static**. I have some experience with [Hugo](https://gohugo.io) now. It's alright. I kinda hate the documentation. ...
+🤷 I don't know. First off, there was no way it would have been anything else than **static**. I have some experience with [Hugo](https://gohugo.io) now. It's alright. I don't love the documentation. But guess [I'm not alone there](https://news.ycombinator.com/item?id=30527884).
 
+After spending some time with it now: [the Zola-Docs](https://getzola.org/documentation/content/section/) aren't uber great either. For once I think the VS Code tooling for HUGO came a long way and Zola might be behind. I mean if the IDE helps you with most of the things you might not need to look up website-documentation at all!
+
+For more there is [Tera](https://keats.github.io/tera/) ... eh whut now?! 🧐 Well, Zola is built upon it. And **you need to know that**! Otherwise you end up scratching your head why there is no info in the Zola docs about simple things such as [for loops](https://keats.github.io/tera/docs/#for)
 
 ### Blog TODO:
 - [x] main page with last few articles
@@ -49,14 +52,17 @@ After all this time I am not even a web-geek! I know .. ehmm, better I can teach
 - [x] external links with icons
 - [x] what to put in the footer
     - [x] build with Zola - date ?
-- [ ] have it upload to FTP via uppy
+- [x] have it upload to FTP via [uptpy](https://github.com/ewerybody/uptpy)
 
 
 ### some resources used
 
-* [colors and font picking - realtimecolors.com](https://www.realtimecolors.com/blog-post?colors=c7c7c7-0c0b14-3560ed-0d0f35-05ff93&fonts=Zilla%20Slab-Noto%20Sans)
-* [Aligning items in a flex container - developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container) [and](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_alignment)
-*
+* [Realtime Colors](https://realtimecolors.com/blog-post?colors=c7c7c7-0c0b14-3560ed-0d0f35-05ff93&fonts=Zilla%20Slab-Noto%20Sans) - colors and font picking. I like these videos from [Juxtopposed on YouTube](https://youtube.com/@juxtopposed). Apparently they do more than just smartshitting and meme bombing social-media-videos. They have actually real good working things!
+* [Aligning items in a flex container - developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container) [and](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_alignment) - Good old Mozilla docs! This stuff is developing way too quick for me to stay on top.
+* [Hermit Zola](https://github.com/VersBinarii/hermit_zola) & [archie-zola](https://github.com/XXXMrG/archie-zola) - for looking into zola code about the tags
+* [Wolfgang's blog notthebe.ee](https://notthebe.ee) [code](https://github.com/notthebee/notthebe.ee) - for simplicity and more Zola examples
+* [Ryan Dahl's blog](https://tinyclouds.org), [Andy Sloane aka a1k0n](https://www.a1k0n.net) and [Floh's Brain Dump](https://floooh.github.io) for their ultra simplicity
+* [Fireship.io](https://fireship.io), [Pixelfed](https://pixelfed.org) and [fediverse](https://jointhefediverse.net/?lang=en-us) for some style/look and feel
 
 ### old site links
 
