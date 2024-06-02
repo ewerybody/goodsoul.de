@@ -31,8 +31,8 @@
       {%- set tagpath = "tags/" ~ tag -%}
       <a class="post-tag" href="{{ macros::rel_url(path=tagpath) }}">#{{ tag }}</a>
     {% endfor -%}
-    <a href="{{ macros::rel_url(path=page.path) }}"> </a>
     </div>
+    <a href="{{ macros::rel_url(path=page.path) }}"> </a>
 </div>
 {# </a> #}
 {%- endmacro post_list_item -%}
