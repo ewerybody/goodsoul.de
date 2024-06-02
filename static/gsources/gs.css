@@ -184,12 +184,18 @@ code {
     background-image: url('menux.svg');
 }
 
-.content_head { display: flex; margin: var(--m2); }
+.content_head {
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--m2) var(--m2) var(--m) var(--m2);
+}
 
 .content_head > span {
     font-family: var(--font2);
     font-size: var(--font-big);
-    margin: 0 0 var(--m) 0; }
+    flex: 1 1 auto;
+    min-width: 50%;
+}
 .content_date {
     margin-left: auto;
     font-family: var(--font2);
@@ -202,7 +208,14 @@ code {
     padding: var(--m2);
 }
 .content_body > p { margin-top: 0;}
-
+.title_meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: auto;
+    padding-left: var(--m2);
+}
 
 .post_list_item {
     position: relative;
@@ -213,9 +226,9 @@ code {
     margin-bottom: var(--m2);
     transition: 0.2s;
     padding: var(--m2);
-    /* padding-top: var(--m); */
     padding-bottom: var(--m2);
     display: flex;
+    flex-wrap: wrap;
 }
 .post_list_item:hover {
     background-color: var(--clr-secondary);

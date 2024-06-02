@@ -25,12 +25,14 @@
 {# <a href="{{page.path}}"> #}
 <div class="post_list_item">
     <span>{{ page.title | safe }}</span>
+    <div class="title_meta">
     <div class="content_date">{{ page.date }}</div>
     {%- for tag in page.taxonomies.tags %}
       {%- set tagpath = "tags/" ~ tag -%}
       <a class="post-tag" href="{{ macros::rel_url(path=tagpath) }}">#{{ tag }}</a>
     {% endfor -%}
     <a href="{{ macros::rel_url(path=page.path) }}"> </a>
+    </div>
 </div>
 {# </a> #}
 {%- endmacro post_list_item -%}
