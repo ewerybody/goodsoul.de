@@ -19,7 +19,7 @@ Alright. Out with it. Here the list and then some details:
 - [ ] a2 core free from ui
 - [ ] back on track with latest Qt for Python 6
 - [ ] resolve the **What is a2?** issue
-- [ ] run on latest Autohotkey 2
+- [x] run on latest Autohotkey 2
 - [ ] un-coupled user/dev element parts
 
 # a2 core refactor
