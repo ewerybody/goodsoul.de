@@ -4,7 +4,7 @@ title = "a2 - works for me"
 [taxonomies]
 tags = ["code", "projects"]
 +++
-Almost **12 years ago** (!!!)* I made [the initial commit on GitHub for a2](https://github.com/ewerybody/a2/commit/71031e49299a2e1189a30405380581b02c28c5c9). The thing was always planned as "never finished, always in development" but sure you gotta get somewhere somewhen, right? So what's the holdup?
+Almost **12 years ago** (!!!)* I made [the initial commit on GitHub for a2](https://github.com/ewerybody/a2/commit/71031e49299a2e1189a30405380581b02c28c5c9), my tool for tiny tools for Windows. The thing was always planned as "never finished, always in development" but sure you gotta get somewhere somewhen, right? So what's the holdup?
 
 Well, I guess the biggest "problem" is that is just `works for me`™️.
 
@@ -24,15 +24,15 @@ Alright. Out with it. Here the list and then some details:
 
 # a2 core refactor
 
-The current [`a2core`](https://github.com/ewerybody/a2/blob/master/ui/a2core.py) is already not using any UI code. That's good but it's also lacking some things that one needs the UI for!
+The current [`a2core`](https://github.com/ewerybody/a2/blob/master/ui/a2core.py) component is already not using any UI code. That's good but it's also lacking some things that one **needs** the UI for!
 
-Adding and changing elements of a module is entangled with ui-code. This must be something that the a2 core/backend is doing. After all I'd even like **hotkeys** handled by the core!
+For instance listing, enabling/disabling and getting information about the individual modules that make the actual a2 functionality is completely covered but adding and changing elements of a module is entangled with ui-code. This must be something that the a2 core/backend is doing. After all I'd even like something specific as **hotkeys**(shortcuts) setup handled by the core!
 
 It's probably no wonder that I didn't envision it like that > 10 years ago but now I'd like to be able to have an a2 CLI that can basically do all this from the terminal and the UI is rather optional, displaying things nicely and calling into the core for changes. This core could even be based on yet another language really but for starters Python is just fine 🤞
 
 # latest Qt for Python 6
 
-The tool turned out with this kind of UI since I gathered XP with PySide professionally. I was already kinda fluent with it and Qt is still nice and up-to-date! So why aren't we on the edge as of now? Well, Qt for Python developed faster than I could pick up the pace. "Back in the days" I thought multiple inheritance was really smart. It isn't. Resolving it all with proper dependency injection is SO much nicer and rewarding! And it works better with Qt for Python. Currently I don't really know if it's actually like "working at all" without multi-inheritance but I also don't care. This crap needs to go AND it fixes the problems with latest Qt :) win-win!
+The tool turned out with this kind of UI since I gathered XP with PySide aka [Qt for Python](https://www.qt.io/qt-for-python) professionally. I was already kinda fluent with it and Qt is still nice and up-to-date! So why aren't we on the edge as of now? Well, Qt for Python developed faster than I could pick up the pace. The code seems rather noodly to me now and "Back in the days" I thought "[multiple inheritance](https://en.wikipedia.org/wiki/Multiple_inheritance)" was really smart. Now I think it isn't. Resolving it all with proper composition code stylr is SO much nicer and rewarding! And it works way better with latest Qt for Python. Currently I don't really know if a2 is actually like "working at all" without multi-inheritance but I also don't care. This crap needs to go AND it fixes the problems with latest Qt :) win-win!
 
 # How to What is ...
 
@@ -47,18 +47,22 @@ Videos. I'd actually like to make shorts explaining aspects of a2. Might be some
 
 # latest Ahk 2
 
-Not unlike the Python world Ahk is split into legacy and latest. Ahk 2 has been on the horizon for ages and I was always too lazy to go for it and give it a try. Meanwhile it was made the default and I actually managed to do some tests and ported some library stuff. But that's a tiny step yet and there is quite some chunk of work ahead! The big question is still if it would work at all the way we build the Ahk script files and start/restart the runtime but, well it's the future™ and it would be rather embarrassing to not attempt the move.
+Not unlike the Python world, Autohotkey (Ahk) is split into legacy and latest. Ahk 2 has been on the horizon for ages and I was always too lazy to go for it and give it a try. Meanwhile it was made the default and I actually managed to do some tests and ported some library stuff. But that's a tiny step yet and there is quite some chunk of work ahead! The big question is still if it would work at all the way we build the Ahk script files and start/restart the runtime but, well it's the future™ and it would be rather embarrassing to not attempt the move.
+
+Also: I'd actually like to be able to build the runtime executable myself! There is some info to [work with VS Code to do this](https://github.com/AutoHotkey/AutoHotkey?tab=readme-ov-file#developing-in-vs-code). So no need for the crazy Visual Studio bloatware. That'd be a bummer really.
 
 # un-coupling elements
 
 The module building blocks need another overhaul.
 
-Currently the developer Ui and code always loads when we just use them the default way. The hotkey element already has its own directory under a2elements. Let's do it that way for any element and have user and dev .py files underneath.
+Like outlined in the core refactor first point ^ a2 is about its modules. These can be clicked together with some basic components, called elements. So there is a checkbox, text and path fields and quite some more. All these have a user- and a developer-interface. It's like turning over the rack and look at the cables from behind to rewire it and the user sees a shiny frontend. Now currently these developer UIs and code always loads when we just use them the default way. The hotkey element already has its own directory under a2elements. Let's do it that way for any element and have user and developer code files underneath.
 
 For once I still believe in separation of code and data. Most Ui is data anyway and if it can be handled with a dedicated tool, let's do it! But currently some default settings values of some of the module building blocks are only just set by the Ui. That's dirty and must come from a dedicated defaults JSON for each and every element.
 
 # conclusion
 
 So yeah. There you have it. That's another 5 years of work? ;D I don't know. I'm still not even sure about the order. Maybe we do Ahk 2 first?
+
+
 
 \* seems like there's a pattern of [reminiscing about ancient stuff in my past life here](@/blog/goodsoul40.md).
