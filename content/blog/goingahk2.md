@@ -12,8 +12,12 @@ So I jumped into it, swapped the Autohotkey.exe to the new version, tried to run
 
 That bulk of work was actually quite fun! I didn't have such a surge of productivity on the project for long! It was rather dull work but it felt super rewarding. Heaps of low hanging fruit harvest! Quickly I knew about what makes it tick now and how things need to be done now and I gotta say: This is a different beast than Python 2/3 conversion! (Which is another topic on it's own. Just so much: We're maintaining a whole big ass library running on Python 2 and 3 all time at the company and it's totally doable!) As for Autohotkey though, no can do! I guess there might be very simple Autohotkey scripts that can run both on 1.1 and 2.0 but generally the changes are rather substantial and I'm sure we'll see why.
 
-tbd: I'll go through some of the commits and list the most offenders.
+tbd: I'll go through some of the commits and list the most offenders that I encountered myself. The actual documentation "[*Changes from v1.1 to v2.0*](https://www.autohotkey.com/docs/v2/v2-changes.htm)" is (according to [WordCount](https://github.com/ewerybody/a2.modules/tree/master/texTools#wordcount---tooltip-with-selected-text-information-wino)) 24318 words, 141258 characters and 1803 lines long!! (I didn't read it all. Only what I needed)
 
-* default arguments **need** the walrus operator :=
-* `byref` is now `*` and much more explicit
-* ...
+* The comma after `CommandName,` is gone. For these there needs to be a space now between the first argument. But ALL can also be written like functions!
+* assignments as well as default arguments **need** the walrus operator `:=`
+  before it could be **both**!
+* `byref` is now `&` and much more explicit
+  so you cannot pass a string when a reference is expected. I mean yeah, duh! But that was possible before!!!
+* Strings are always in quotes and mix of `'` and `"` are valid! To write a single literal `"` now it's `'"'` and ... (I kid you not) no longer `""""`. You don't need percentage notation `%varnam%` for concatanation.
+* `my_array.Length` is now a property and can no longer be called
