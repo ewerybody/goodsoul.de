@@ -19,5 +19,5 @@ tbd: I'll go through some of the commits and list the most offenders that I enco
   before it could be **both**!
 * `byref` is now `&` and much more explicit
   so you cannot pass a string when a reference is expected. I mean yeah, duh! But that was possible before!!!
-* Strings are always in quotes and mix of `'` and `"` are valid! To write a single literal `"` now it's `'"'` and ... (I kid you not) no longer `""""`. You don't need percentage notation `%varnam%` for concatanation.
+* Strings are always in quotes and mix of `'` and `"` are valid! To write a single literal `"` now it's `'"'` and ... (I kid you not) no longer `""""`. You don't need percentage notation `%varname%` for concatanation.
 * `my_array.Length` is now a property and can no longer be called
