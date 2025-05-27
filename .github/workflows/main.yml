@@ -13,9 +13,11 @@ jobs:
 
       # - name: Install Zola
         # run: sudo snap install zola --edge
-
+      - name: unlock zola
+        run: chmod +x ./bin/zola
+        
       - name: Build the website
-        run: bin/zola build
+        run: .bin/zola build
 
       - name: Find and Upload changes
         run: python GSVKSBKJBDU.py goodsoul.de ${{secrets.VKNJSR}} ${{secrets.VSKBPSWF}} public .
