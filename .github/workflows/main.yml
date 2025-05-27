@@ -11,11 +11,11 @@ jobs:
       - name: Checkout the current branch
         uses: actions/checkout@v3
 
-      - name: Install Zola
-        run: sudo snap install zola --edge
+      # - name: Install Zola
+        # run: sudo snap install zola --edge
 
       - name: Build the website
-        run: zola build
+        run: bin/zola build
 
       - name: Find and Upload changes
         run: python GSVKSBKJBDU.py goodsoul.de ${{secrets.VKNJSR}} ${{secrets.VSKBPSWF}} public .
