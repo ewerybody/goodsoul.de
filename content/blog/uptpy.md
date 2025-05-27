@@ -22,9 +22,10 @@ Looking into the GitHub Actions logs with the first standard FTP-uploader script
 So, needing to checkout the project anyway and having access to Python on the Actions instance as well: that slashed down the first 2 points!
 Of course: You'd need to add the python script to your project. (I should look into making it use `pip` as well and or checking out via GitHub Actions in the future.) The script needs to be happy with built-in python stuff as well. (That I'm not really having a problem with :) I really like vanilla stuff.)
 
-Then: When the uploads happen through this very uploader all the time, we can know **what** was uploaded last time and check against the locally build files without scanning remotely. `uptpy` now downloads the remote manifest first, builds a local manifest and checka against it sieving out anything that's already up-to-date and enabling deletions!! (well, only of files that once have been uploaded with `uptpy`, otherwise they're left in peace)
+Then: When the uploads happen through this very uploader all the time, we can know **what** was uploaded last time and check against the locally build files without scanning remotely. `uptpy` now downloads the remote manifest first, builds a local manifest and check against it sieving out anything that's already up-to-date and enabling deletions!! (well, only of files that once have been uploaded with `uptpy`, otherwise they're left in peace)
 
 # ok but now?
 
-I listed already some [issues](https://github.com/ewerybody/uptpy/issues). There is a fun one that I'm suspecting is either due to my hoster FTP space or actually a Python issue: Remote file listing encoding! You can provide a type of encoding when creating the connection with the Python FTP module. There are a couple supported modes and one helps with emojis in filenames and the other with something else strange. Thing is:
+I listed already some [issues](https://github.com/ewerybody/uptpy/issues). There is a fun one that I'm suspecting is either due to my ISPs FTP space or actually a Python issue: Remote file listing encoding! You can provide a type of encoding when creating the connection with the Python FTP module. There are a couple supported modes and one helps with emojis in filenames and the other with something else strange. Thing is:
 if you'd have a filename with BOTH: no file listing whatsoever! 🤯
+
