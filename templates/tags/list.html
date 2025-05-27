@@ -9,7 +9,7 @@
   <ul class="tags">
     {% for term in terms %}
     <li>
-      <a class="post-tag" href="{{ term.name | safe }}">
+      <a class="post-tag" href="/tags/{{ term.name | safe }}">
           #{{ term.name }}
           <span>{{ term.pages | length }} post{{ term.pages | length | pluralize }}</span>
       </a>
