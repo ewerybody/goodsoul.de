@@ -2,7 +2,7 @@
 title = "goodsoul.de"
 base_url = "https://goodsoul.de"
 minify_html = true
-description = "Hey everyone! I'm Eric, I code tools for game developers, I draw, like cycling, breakbeats, stickers, do cooking, lettering, swing dancing, screen printing, writing ... lengthy lists and this is my web place for all these things and maybe even"
+description = "Hey everyone! I'm Eric, I code tools, I draw, like cycling, breakbeats, stickers, do cooking, lettering, swing dancing, screen printing, writing ... lengthy lists and this is my web place for all these things and maybe even"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -27,5 +27,5 @@ menu = [
     { path = "/about", name = "about" },
 ]
 
-num_recent = 3
+num_recent = 5
 github = "https://github.com/ewerybody/goodsoul.de/blob/main/content"
