@@ -208,6 +208,7 @@ code {
     padding: var(--m2);
 }
 .content_body > p { margin-top: 0;}
+.content_body > p:last-of-type { margin: 0;}
 .title_meta {
     display: flex;
     flex-wrap: wrap;
