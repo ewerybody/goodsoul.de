@@ -2,7 +2,7 @@
 date = 2024-02-26
 title = "uptpy - Compact Python FTP Uploader"
 [taxonomies]
-tags = ["code", "blog"]
+tags = ["code", "blog", "py", "web", "projects"]
 +++
 Finally I made this public! `uptpy` now has it's own GitHub project:
 

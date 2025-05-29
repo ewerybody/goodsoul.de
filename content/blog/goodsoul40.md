@@ -2,7 +2,7 @@
 date = 2023-12-29
 title = "goodsoul blog 4.0"
 [taxonomies]
-tags = ["blog", "bla"]
+tags = ["blog", "bla", "web"]
 +++
 
 Yes, this is already the 4th installment of this website. And it's been 23 years since it all started! 😮

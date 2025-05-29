@@ -2,7 +2,7 @@
 date = 2024-03-18
 title = "a2 - works for me"
 [taxonomies]
-tags = ["code", "projects"]
+tags = ["code", "projects", "a2", "ahk"]
 +++
 Almost **12 years ago** (!!!)* I made [the initial commit on GitHub for a2](https://github.com/ewerybody/a2/commit/71031e49299a2e1189a30405380581b02c28c5c9), my tool for tiny tools for Windows. The thing was always planned as "never finished, always in development" but sure you gotta get somewhere somewhen, right? So what's the holdup?
 

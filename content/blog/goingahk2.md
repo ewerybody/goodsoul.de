@@ -2,7 +2,7 @@
 date = 2024-08-18
 title = "Going Autohotkey 2"
 [taxonomies]
-tags = ["code", "projects"]
+tags = ["code", "projects", "a2", "ahk"]
 +++
 Whow! **Exactly** 5 months ago [I wrote about the next big things on my a2 project](@/blog/a2works4me.md). One of these 5 things was switching its scripting language Autohotkey to the now officially supported version 2, deprecating the old 1.1 version that a2 scripts were based on so far.
 
