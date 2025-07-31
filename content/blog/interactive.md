@@ -14,4 +14,6 @@ Well, let's gather some great examples here:
 
 * [Sam Rose @ encore on Queuing](https://encore.dev/blog/queueing)
 
+* [Reading QR codes without a computer!](https://qr.blinry.org) - fascinating step by step tour through a QR-code you choose or scan via web-cam. (This is open source!! [Hosted on coderberg](https://codeberg.org/Piko/qr-explainer)) 
+
 ... I once came across an interactive site about Signed Distance Functions (SDF) with little code fields with broken snippets one had to fix to make an SDF rendering work. There were the typical orange lines ([like in this shadertoy example](https://www.shadertoy.com/view/3ltSW2)) and it was divided in a couple lessons first 2D then 3D getting more complex. I'll post it here when I find it :)
