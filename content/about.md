@@ -2,7 +2,7 @@
 date = 2023-11-12
 title = "about <b>goodsoul.de</b>"
 +++
-Hello, my name is Eric (aka ëRiC or ewerybody) from Laniakea Supercluster, Milky Way Galaxy, 3rd planet of the "Sun" system and this is my website/blog for personal ramblings, collections of random stuff I come across and aaaaaall the projects I want to do and maybe even am doing already.
+Hello, my name is Eric (aka ëRiC or ewerybody) i'm an organism from Laniakea Supercluster, Milky Way Galaxy, 3rd planet of the "Sun" system named "Earth", a landmass called "Europe", a region therein named "Germany"... , and this is my website/blog for personal ramblings, collections of random stuff I come across and aaaaaall the projects I want to do and maybe even am doing already.
 
 ### Who am I?
 
