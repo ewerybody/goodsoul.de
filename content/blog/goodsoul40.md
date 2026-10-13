@@ -12,7 +12,7 @@ After all this time I am not even a web-geek! I know .. ehmm, better I can teach
 
 ### a **little** timeline
 
-1. `2001-2006` • hand crafted HTML frame jungle as a 'DJ friends calendar page' with "blog" notes.\
+1. `2001-2006` • hand crafted [HTML](https://www.ecosia.org/images?q=I+know+HTML#) frame jungle as a 'DJ friends calendar page' with "blog" notes.
 2. `2007-2008` • [Movable Type](https://movabletype.org) php blog thing.
 3. `2008-2023` • [Wordpress](https://wordpress.org) with tailored design (which broke somewhen, ).
 4. `2024-...` • Staticly generated from md-files with [Zola](https://getzola.org).
