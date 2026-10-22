@@ -10,7 +10,7 @@ So, I posted a couple things already but still this is rather boring here, right
 
 But I have an idea! Hear me out. (I'm kind of talking to myself. The talk is already tolked through but how would you know!? Guess I'm talking to a version of myself that completely forgot what this was all about. Might be funny somewhen in the future)
 
-The idea: Articles that are unfinished by design.
+The idea: **Articles that are unfinished by design.**
 
 From my stack of ideas expect some posts that seem like stubs at first. I'll amend later. Why tho? I want things to come out finally! But also I'd like the obligation to remain responsible for ideas that just develop over time. My experience changes, the world keeps turning. If I'm unhappy with an article I want to reflect on that withing that article!
 
