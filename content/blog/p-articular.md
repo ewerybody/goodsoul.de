@@ -12,7 +12,8 @@ But I have an idea! Hear me out. (I'm kind of talking to myself. The talk is alr
 
 The idea: **Articles that are unfinished by design.**
 
-From my stack of ideas expect some posts that seem like stubs at first. I'll amend later. Why tho? I want things to come out finally! But also I'd like the obligation to remain responsible for ideas that just develop over time. My experience changes, the world keeps turning. If I'm unhappy with an article I want to reflect on that withing that article!
+Sounds a little "yeah sure duh!!?!?" but I just need to set this straight for myself!
+So from my stack of ideas expect some posts that seem like stubs at first. I'll amend later. Why tho? I want things to come out finally! But also I'd like the obligation to remain responsible for ideas that just develop over time. My experience changes, the world keeps turning. If I'm unhappy with an article I want to reflect on that withing that article!
 
 Will I throw away tings? Sure, but it's gonna be on version control anyway. Will there be controversial stuff? Might be! I mean I'm a mid aged yuppy. I have biases. But this is my space and I'd like to lay out my ever developing reflection somehow.
 
