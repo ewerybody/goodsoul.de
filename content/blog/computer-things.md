@@ -15,4 +15,4 @@ However: I just want to remember some setup things that I constantly re-lookup a
   - [ ] Install [Sideberry](https://addons.mozilla.org/en-US/firefox/addon/sidebery/)? 🤔
 - ... more to come :)
 
-Sure, eventually this all should go into some nix-config on a git repo? That'd be pretty cool. Well not today my friend. Not today.
+Sure, eventually this all should go into some nix-config on a git repo? That'd be pretty cool. Well not today my friend. Not today. :]
