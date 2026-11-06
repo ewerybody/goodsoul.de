@@ -15,7 +15,7 @@ However: I just want to remember some setup things that I constantly re-lookup a
   - [ ] Install [Sideberry](https://addons.mozilla.org/en-US/firefox/addon/sidebery/)? 🤔
 
 - [VS Codium](https://vscodium.com/)
-  - [ ] How to platform agnostic things in `.vscode/launch.json`?\
+  - [x] How to platform agnostic things in `.vscode/launch.json`?\
         [Hhatatatatata](https://youtube.com/shorts/DtdlPiYPln0)! Do you **really** want that?!
         If it's about the os path difference to the Python interpreter in `.venv`?\
         You can also use `${command:python.interpreterPath}`! That one must have been set anyway.\
