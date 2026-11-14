@@ -1,6 +1,6 @@
 +++
 date = 2026-10-29
-title = "🍏 mac thoughts"
+title = "🍏🐛 mac thoughts"
 draft = false
 [taxonomies]
 tags = ["bla", "computer", "list"]
@@ -10,7 +10,7 @@ So, the team I'm now working with had me picking a new company device. As it was
 I'm quite new to working on a mac. Sure, I did a couple things here and there but working all day on one I did not yet.
 But I'm open to the experience! So let's dig into it! :)
 
-## Keyboard/Typing
+### Keyboard/Typing
 * There is a system built-in text replacements thing in the keyboard options!! 😃 :smiley:
   The accent tool (hold long for accents) doesn't work there :face_palm: It cannot deal with upper/lower cases :face_palm:
 * Mangling word jump left/right + selection is UTTERLY difficult
@@ -25,7 +25,7 @@ But I'm open to the experience! So let's dig into it! :)
   Oh! It's menu-name based!!! :face_palm: You type the EXACT menu name and then it does the thing. I'm baffled.
   So that neat Finder feature "Select things, RMB, group into new folder" cannot be put to one of these shortcuts with arbitrary numbers of selected items be cause the number of items is in the menu name and that changes ... :face_palm:
 
-## Window Management/Display
+### Window Management/Display
 * I really like the cycle-current-app-windows shortcut `Cmd+\``!  doesn't work with fullscreen windows. They're just left out of the loop :face_palm:
 * There are a lot of window-modal-dialogs and editors. When you want to move the dialog you need to move from the title of the dimmed out background window! :face_palm:
 * When going into sleep there's often a loud sound peak crack coming from connected monitor. Sounds really bad :/ :no_good:
@@ -39,7 +39,7 @@ But I'm open to the experience! So let's dig into it! :)
 * Scaling can **not** be set per monitor setup. So on my big screen everything would be tiny, so I scale things up. Now when I'm on the laptop only I have to scale it all back down individually!!! :face_palm:
 * Monitor is turned off randomly. Have to wait a moment, it comes back on and I need **log in** again :confused:
 
-## Finder
+### Finder
 * One can setup per folder actions with Apple script!! kinda Nice :point_up:
 * Actually neat Finder feature "Select things, RMB, group into new folder" :smiley:
 * When Cmd+O to open a file you cannot paste a path in there :face_palm: because paths are so last millenium ...
@@ -48,7 +48,7 @@ But I'm open to the experience! So let's dig into it! :)
 * These .dmg-"Installers" apparently are customized Finders https://unsung.aresluna.org/as-a-windows-user-its-a-very-surreal-way-to-install-a-program/ :face_palm:
 * When saving a new file there is no autocomplete when typing the file name in the Finder dialog :confused:
 
-## Mouse
+### Mouse
 * Mouse-Wheel events are handled completely different. You cannot simply intercept a wheel event with Karabiner and use it with something :face_palm:
   So by default already there is no ModifierKey+Wheel to turn sizes or Volume up/down.
 * Trackpad & Mouse "Natural scrolling" cannot be set individually!! :face_palm:
@@ -58,4 +58,13 @@ But I'm open to the experience! So let's dig into it! :)
   Apparently this is a know issue :face_palm: \ Oooof I just opened up the lid to try the trackpad for a change because I thought that's probably ONLY the evil non-apple mouse here and internal shit will be shiny as always:
   Well, that COMPLETELY got it go bananas. Maybe 10 seconds NO cursor movement at all then some "wait a moment I'm busy popup", then 1 jump every second...
 
-But yeah no biggie huh? :D
+## after all ... 
+
+I don't mean to hate on the Mac or it's users. I'm quite happy for the machine! It's mostly doing a great job, build quality is as expected top notch, battery lasts for ages, sound is awesome, the keyboard (although I only use it when not home) is absolutely nice...
+
+I'm quite biased tho and some of the prejudgements I had are not completely wiped. The taste is still there that they put most of the energy to keep you within the ecosystem and as soon as you go a little outside, like plugging a non-Apple monitor: shame on you! expect problems!
+
+If you have objections, additions or thoughts on this let me know and I'll end the article.
+
+Eventially for private computing at least I'm looking forward to not rely on any of the proprietary OSs anymore. Expect a roast on "closing the windows" soon :) 
+
