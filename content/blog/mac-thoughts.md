@@ -3,7 +3,7 @@ date = 2026-10-29
 title = "🍏 mac thoughts"
 draft = true
 [taxonomies]
-tags = ["bla", "computer"]
+tags = ["bla", "computer", "list"]
 +++
 
 So, the team at Mozilla I'm now working with had me picking a mac as company device. (I now wish they'd have [framework ones](https://frame.work/de/en/laptop13)!)
