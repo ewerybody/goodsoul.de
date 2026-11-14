@@ -2,7 +2,7 @@
 date = 2024-02-29
 title = "Interactive Websites"
 [taxonomies]
-tags = ["code", "web"]
+tags = ["code", "web", "list"]
 +++
 I'm always enjoying interactivity to make things understandable. It was the explorative way that I got into coding in the first place.
 Well, let's gather some great examples here:
