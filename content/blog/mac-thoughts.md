@@ -1,12 +1,12 @@
 +++
 date = 2026-10-29
 title = "🍏 mac thoughts"
-draft = true
+draft = false
 [taxonomies]
 tags = ["bla", "computer", "list"]
 +++
 
-So, the team at Mozilla I'm now working with had me picking a mac as company device. (I now wish they'd have [framework ones](https://frame.work/de/en/laptop13)!)
+So, the team I'm now working with had me picking a new company device. As it was kindly suggested, I didn't have any solid XP with it, and thought that'd complete my "collection" of the 3 OSs I accepted the recommendation and chose a MacBook. (Maybe... I now wish they'd have [framework ones](https://frame.work/de/en/laptop13)!)
 I'm quite new to working on a mac. Sure, I did a couple things here and there but working all day on one I did not yet.
 But I'm open to the experience! So let's dig into it! :)
 
