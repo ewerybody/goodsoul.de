@@ -76,6 +76,8 @@ I don't mean to hate on the Mac or it's users. I'm quite happy for the machine! 
 
 I'm quite biased tho and some of the prejudgments I had are not completely wiped. The taste is still there that they put most of the energy to keep you within the ecosystem and as soon as you go a little outside, like plugging a non-Apple monitor: shame on you! **You** were **asking** for problems! ;]
 
+Turns out [others are way more concerned](https://evermeet.cx/wiki/Apple%27s_disregard_for_security_and_privacy_is_mind-boggling)! 
+
 Thanks for reading this far! If you have objections, additions or thoughts on this let me know and I'll amend the article accordingly. Also tell me know If you want to stay anonymous or want to be linked.
 
 Eventually for private computing at least I'm looking forward to not rely on any of the proprietary OSs anymore. Expect a roast on "closing the windows" soon :)
